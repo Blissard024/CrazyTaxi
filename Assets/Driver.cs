@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-
-    float steerSpeed = 0.05f;
-    float moveSpeed = 0.005f;
+    const float INVERT  = -1;
+    [SerializeField] float steerSpeed = 0.05f;
+    [SerializeField] float moveSpeed = 0.005f;
 
 
     // Start is called before the first frame update
@@ -18,8 +18,10 @@ public class Driver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0,steerSpeed);
-        transform.Translate(0,moveSpeed,0);
+        float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * INVERT; // Invert or -1 was added to reverse the steering. 
+        float moveAmount = Input.GetAxis("Vertical") * moveSpeed;
+        transform.Rotate(0,0,steerAmount);
+        transform.Translate(0,moveAmount,0);
         
     }
 }
