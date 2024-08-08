@@ -10331,7 +10331,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce21bafe876258458a48041ab3c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyDelay: 0.25
+  DestroyDelay: 0.1
+  hasPackageColor:
+    serializedVersion: 2
+    rgba: 4282319813
+  noPackagecolor:
+    serializedVersion: 2
+    rgba: 4294967295
 --- !u!1 &1283005819
 GameObject:
   m_ObjectHideFlags: 0
@@ -14625,7 +14631,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8018868, g: 0, b: 0.24798416, a: 1}
+  m_Color: {r: 0.7725491, g: 0.011764707, b: 0.24705884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
